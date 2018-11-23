@@ -118,12 +118,14 @@ The final model architecture consisted of a :
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_46_25_694.jpg]
+![alt text](https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_46_25_694.jpg)
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to ....
 
-![alt text][https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_54_56_040.jpg]
-![alt text][https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_55_16_196.jpg]
+These images show what a recovery looks like starting from ... :
+
+![alt text](https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_54_56_040.jpg)
+![alt text](https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/center_2018_11_22_00_55_16_196.jpg)
 
 
 Then I repeated this process driving backwards on track one. I also tried training over track two and the car drove about half the road but didn't complete so i removed the data as it didn't affect track one.
@@ -134,10 +136,10 @@ After the collection process, I had 10,080 number of data points. I then preproc
 1 standard deviation. I also cropped the upper side of the images as i thought it ould be distracting for the model.
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set.
+I finally randomly shuffled the data set and put 20% of the data into a validation set.
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as the error didn't decrease much below it ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 Finally, i plotted the validation and training error as shown below
 
-![alt text][https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/trainVSvalid_error.jpg]
+![alt text](https://github.com/Mahmoud-Selim/CarND-Behavioral-Cloning-P3/blob/master/Screenshots/trainVSvalid_error.jpg)
